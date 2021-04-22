@@ -2,6 +2,7 @@ package com.example.movies
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.movieapp.R
 import com.github.terrakok.cicerone.Navigator
 import com.github.terrakok.cicerone.androidx.AppNavigator
 
@@ -12,11 +13,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //test
-
-
-
-
-
         if (savedInstanceState == null) {
             router.replaceScreen(Screens.MovieList())
         }
